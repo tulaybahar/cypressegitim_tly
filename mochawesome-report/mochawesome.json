@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-01-20T09:08:57.919Z",
+    "end": "2024-01-20T09:08:58.588Z",
+    "duration": 669,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b1be5bad-3e3a-408f-b121-59fa45a3c21d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\SearchResultSpec.cy.js",
+      "file": "cypress\\e2e\\SearchResultSpec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "74184241-9d50-44f4-892e-2fa697cf2130",
+          "title": "Includes search results test scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search product white color type and 6X8 size",
+              "fullTitle": "Includes search results test scenarios Search product white color type and 6X8 size",
+              "timedOut": null,
+              "duration": 279,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Methods.default.visit('https://demo.vercel.store/');\n_Methods.default.fillInput(_dashboardLocators.default.searchProductInputText, 'Acme Drawstring Bag{enter}');\n_Methods.default.clickButton(searchResult.searchResultProduct);\n_Methods.default.wait(1000);\n_Methods.default.clickButton(_productDetail.default.colorWhiteType, 1000);\n_Methods.default.clickButton(_productDetail.default.productSizeType, 1000);\n_Methods.default.clickButton(_productDetail.default.addToCartButton);\n_Methods.default.shouldHaveText(_productDetail.default.addedProductText, 'Acme Drawstring Bag');\n_Methods.default.shouldHaveText(_productDetail.default.addedProductTypes, 'White / 6 x 8 inch');",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'startsWith')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'startsWith')\n    at Methods.findElement (webpack:///./cypress/pages/Methods.js:8:15)\n    at Methods.fillInput (webpack:///./cypress/pages/Methods.js:18:20)\n    at Context.eval (webpack:///./cypress/e2e/SearchResultSpec.cy.js:10:16)",
+                "diff": null
+              },
+              "uuid": "a12232ac-e9e7-46f2-8f6f-e954dd08edd6",
+              "parentUUID": "74184241-9d50-44f4-892e-2fa697cf2130",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Search product black color type and 7X9 size",
+              "fullTitle": "Includes search results test scenarios Search product black color type and 7X9 size",
+              "timedOut": null,
+              "duration": 215,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_Methods.default.visit('https://demo.vercel.store/');\n_Methods.default.fillInput(_dashboardLocators.default.searchProductInputText, 'Acme Drawstring Bag{enter}');\n_Methods.default.clickButton(searchResult.searchResultProduct);\n_Methods.default.wait(1000);\n_Methods.default.clickButton(_productDetail.default.colorBlackType, 1000);\n_Methods.default.clickButton(_productDetail.default.productSecondSizeType, 1000);\n_Methods.default.clickButton(_productDetail.default.addToCartButton);\n_Methods.default.shouldHaveText(_productDetail.default.addedProductText, 'Acme Drawstring Bag');\n_Methods.default.shouldHaveText(_productDetail.default.addedSecondProductTypes, 'Black / 7 x 9 inch');",
+              "err": {
+                "message": "TypeError: Cannot read properties of undefined (reading 'startsWith')",
+                "estack": "TypeError: Cannot read properties of undefined (reading 'startsWith')\n    at Methods.findElement (webpack:///./cypress/pages/Methods.js:8:15)\n    at Methods.fillInput (webpack:///./cypress/pages/Methods.js:18:20)\n    at Context.eval (webpack:///./cypress/e2e/SearchResultSpec.cy.js:21:16)",
+                "diff": null
+              },
+              "uuid": "16b69966-8171-44b0-963c-ce22077a2fdc",
+              "parentUUID": "74184241-9d50-44f4-892e-2fa697cf2130",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a12232ac-e9e7-46f2-8f6f-e954dd08edd6",
+            "16b69966-8171-44b0-963c-ce22077a2fdc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 494,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
