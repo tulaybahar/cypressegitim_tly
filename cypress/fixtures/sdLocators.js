@@ -19,4 +19,6 @@ export default{
     finishButton:"[data-test='finish']",
     thankU:"//h2[text()='Thank you for your order!']"
   
+
+    
   };
