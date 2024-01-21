@@ -18,7 +18,8 @@ export default{
     priceTotal:"//div[@class='summary_info_label'][text()='Price Total']",
     finishButton:"[data-test='finish']",
     thankU:"//h2[text()='Thank you for your order!']"
+    denemebutton:"//h2[text()='Thank you for your order!']"
   
 
-    
+
   };
